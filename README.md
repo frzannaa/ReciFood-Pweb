@@ -36,3 +36,11 @@ A storage that contains food recipes that are liked by users.
 Users can rate a meal recipe.
 - #### Comment <br>
 Users can leave comments, either on the news menu or on food recipes.
+- #### Register <br>
+Users can register themselves as members on ReciFood.
+- #### Login <br>
+User can login their account to ReciFood.
+- #### Manage the news <br>
+ReciFood team can add or remove news on ReciFood.
+
+
