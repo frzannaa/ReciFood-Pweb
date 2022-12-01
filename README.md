@@ -43,10 +43,3 @@ Users can register themselves as members on ReciFood.
 User can login their account to ReciFood.
 - #### Manage the news <br>
 ReciFood team can add or remove news on ReciFood.
-
-## Our Progress
-For the main menu feature, we haven't finished it yet because we are waiting for the other menus to be finished. <br>
- For news, there is already one news about agriculture that has been posted, following other news.<br>
-For About , it's almost finished, just perfecting it.<br>
-For Contact, the UI is complete, it's just a matter of implementing it, which we haven't finished working on yet.<br>
-For Categories, because it has many aspects, we still complete 2 types out of 4 categories.
