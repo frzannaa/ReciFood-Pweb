@@ -37,14 +37,15 @@
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
-      <a href="index.html" class="logo d-flex align-items-center">
+      <a href="index.php" class="logo d-flex align-items-center">
 
         <h1>ReciFood</h1>
       </a>
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a href="index.html">Home</a></li>
+           <li><a href="login.php">Login</a></li>
+            <li><a href="index.php">Home</a></li>
           <li class="dropdown"><a href="news.html"><span>News</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
             <ul>
               <li class="dropdown"><a href="news.html"><span>Agriculture</span> </a>
@@ -69,8 +70,13 @@
       </nav><!-- .navbar -->
 
       <div class="position-relative">
-        <a href="#" class="mx-2"><span class="bi-twitter"></span></a>
-        <a href="https://www.instagram.com/recifood_its/" class="mx-2"><span class="bi-instagram"></span></a>
+         <div class="position-relative">
+           
+     <?php 
+echo "Hello " . $nama . "!" ;
+?>
+    <a class="btn btn-default" href="logout.php"> [Logout]</a> 
+
 
         <a href="#" class="mx-2 js-search-open"><span class="bi-search"></span></a>
         <i class="bi bi-list mobile-nav-toggle"></i>
@@ -225,7 +231,7 @@
           <div class="col-6 col-lg-2">
             <h3 class="footer-heading">Navigation</h3>
             <ul class="footer-links list-unstyled">
-              <li><a href="index.html"><i class="bi bi-chevron-right"></i> Home</a></li>
+              <li><a href="index.php"><i class="bi bi-chevron-right"></i> Home</a></li>
               <li><a href="appetizer.html"><i class="bi bi-chevron-right"></i> Categories</a></li>
               <li><a href="news.html"><i class="bi bi-chevron-right"></i> News</a></li>
               <li><a href="about.html"><i class="bi bi-chevron-right"></i> About us</a></li>
