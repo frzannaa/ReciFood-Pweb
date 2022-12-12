@@ -33,42 +33,49 @@
 
 <body>
 
-  <!-- ======= Header ======= -->
-  <header id="header" class="header d-flex align-items-center fixed-top">
-    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
-      <a href="index.html" class="logo d-flex align-items-center">
+    <!-- ======= Header ======= -->
+    <header id="header" class="header d-flex align-items-center fixed-top">
+      <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+  
+        <a href="index.html" class="logo d-flex align-items-center">
+  
+          <h1>ReciFood</h1>
+        </a>
+  
+        <nav id="navbar" class="navbar">
+          <ul>
+             <li><a href="login.php">Login</a></li>
+            <li><a href="index.php">Home</a></li>
+            <li class="dropdown"><a href="news.html"><span>News</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+              <ul>
+                <li class="dropdown"><a href="news.html"><span>Agriculture</span> </a>
+                <li class="dropdown"><a href="food.html"><span>Food</span> </a>
+                <li class="dropdown"><a href="history.html"><span>History of Food</span> </a>
+                <li class="dropdown"><a href="chef.html"><span>Chef in the World</span> </a>
+  
+              </ul>
+            </li>
+            <li class="dropdown"><a href="appetizer.html"><span>Categories</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+               <ul>
+                <li class="dropdown"><a href="appetizer.html"><span>Appetizer</span> </a>
+                <li class="dropdown"><a href="maincourse.html"><span>Main Course</span> </a>
+                <li class="dropdown"><a href="dessertfood.html"><span>Dessert Food</span> </a>
+                <li class="dropdown"><a href="beverages.html"><span>Beverages</span> </a>
+  
+              </ul>
+            </li>
+  
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav><!-- .navbar -->
 
-        <h1>ReciFood</h1>
-      </a>
-
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="news.html">News</a></li>
-          <li class="dropdown"><a href="appetizer.html"><span>Categories</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
-             <ul>
-              
-              <li class="dropdown"><a href="appetizer.html"><span>Appetizer</span> </a>
-
-              </li>
-              <li class="dropdown"><a href="maincourse.html"><span>Main Course</span> </a>
-
-              <li class="dropdown"><a href="dessertfood.html"><span>Dessert Food</span> </a>
-
-              <li class="dropdown"><a href="beverages.html"><span>Beverages</span> </a>
-
-            </ul>
-          </li>
-
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav><!-- .navbar -->
-
-      <div class="position-relative">
-        <a href="#" class="mx-2"><span class="bi-twitter"></span></a>
-        <a href="https://www.instagram.com/recifood_its/" class="mx-2"><span class="bi-instagram"></span></a>
+     <div class="position-relative">
+     <?php 
+echo "Hello " . $nama . "!" ;
+?>
+    <a class="btn btn-default" href="logout.php"> [Logout]</a> 
 
         <a href="#" class="mx-2 js-search-open"><span class="bi-search"></span></a>
         <i class="bi bi-list mobile-nav-toggle"></i>
@@ -296,7 +303,7 @@ Filling: <br>
           <div class="col-6 col-lg-2">
             <h3 class="footer-heading">Navigation</h3>
             <ul class="footer-links list-unstyled">
-              <li><a href="index.html"><i class="bi bi-chevron-right"></i> Home</a></li>
+              <li><a href="index.php"><i class="bi bi-chevron-right"></i> Home</a></li>
               <li><a href="appetizer.html"><i class="bi bi-chevron-right"></i> Categories</a></li>
               <li><a href="news.html"><i class="bi bi-chevron-right"></i> News</a></li>
               <li><a href="about.html"><i class="bi bi-chevron-right"></i> About us</a></li>
