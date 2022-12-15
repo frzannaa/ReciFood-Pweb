@@ -33,67 +33,15 @@
 
 <body>
 
-
-    <!-- ======= Header ======= -->
     <header id="header" class="header d-flex align-items-center fixed-top">
-      <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
-  
-        <a href="index.php" class="logo d-flex align-items-center">
-  
-          <h1>ReciFood</h1>
-        </a>
-  
-        <nav id="navbar" class="navbar">
-          <ul>
-             <li><a href="login.php">Login</a></li>
-            <li><a href="index.php">Home</a></li>
-            <li class="dropdown"><a href="news.html"><span>News</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
-              <ul>
-                <li class="dropdown"><a href="news.html"><span>Agriculture</span> </a>
-                <li class="dropdown"><a href="food.html"><span>Food</span> </a>
-                <li class="dropdown"><a href="history.html"><span>History of Food</span> </a>
-                <li class="dropdown"><a href="chef.html"><span>Chef in the World</span> </a>
-  
-              </ul>
-            </li>
-            <li class="dropdown"><a href="appetizer.html"><span>Categories</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
-               <ul>
-                <li class="dropdown"><a href="appetizer.html"><span>Appetizer</span> </a>
-                <li class="dropdown"><a href="maincourse.html"><span>Main Course</span> </a>
-                <li class="dropdown"><a href="dessertfood.html"><span>Dessert Food</span> </a>
-                <li class="dropdown"><a href="beverages.html"><span>Beverages</span> </a>
-  
-              </ul>
-            </li>
-  
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </nav><!-- .navbar -->
-
-  <div class="position-relative">
-     <?php 
-echo "Hello " . $nama . "!" ;
-?>
-    <a class="btn btn-default" href="logout.php"> [Logout]</a> 
-
-        <a href="#" class="mx-2 js-search-open"><span class="bi-search"></span></a>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-
-        <!-- ======= Search Form ======= -->
-        <div class="search-form-wrap js-search-form-wrap">
-          <form action="search-result.html" class="search-form">
-            <span class="icon bi-search"></span>
-            <input type="text" placeholder="Search" class="form-control">
-            <button class="btn js-search-close"><span class="bi-x"></span></button>
-          </form>
-        </div><!-- End Search Form -->
-
-      </div>
-
-    </div>
+     <?php
+		include ("menu.html");
+	?>
 
   </header><!-- End Header -->
+
+  
+  
 
   <main id="main">
     <section>
@@ -212,27 +160,26 @@ echo "Hello " . $nama . "!" ;
           <div class="col-lg-4">
             <h3 class="footer-heading">About ReciFood</h3>
             <p>Recifood is a place for those who like agriculture, various types of food, and cooking. In ReciFood, there are many explanations about food ingredients, how to cook a food, and other interesting information.</p>
-            <p><a href="about.html" class="footer-link-more">Learn More</a></p>
+            <p><a href="about.php" class="footer-link-more">Learn More</a></p>
           </div>
           <div class="col-6 col-lg-2">
             <h3 class="footer-heading">Navigation</h3>
             <ul class="footer-links list-unstyled">
               <li><a href="index.php"><i class="bi bi-chevron-right"></i> Home</a></li>
-              <li><a href="appetizer.html"><i class="bi bi-chevron-right"></i> Categories</a></li>
-              <li><a href="news.html"><i class="bi bi-chevron-right"></i> News</a></li>
-              <li><a href="about.html"><i class="bi bi-chevron-right"></i> About us</a></li>
-              <li><a href="contact.html"><i class="bi bi-chevron-right"></i> Contact</a></li>
+              <li><a href="news.php?kat=1"><i class="bi bi-chevron-right"></i> Categories</a></li>
+              <li><a href="news.php?kat=2"><i class="bi bi-chevron-right"></i> News</a></li>
+              <li><a href="about.php"><i class="bi bi-chevron-right"></i> About us</a></li>
+              <li><a href="contact.php"><i class="bi bi-chevron-right"></i> Contact</a></li>
             </ul>
           </div>
-  <div class="col-6 col-lg-2">
+          <div class="col-6 col-lg-2">
             <h3 class="footer-heading">Categories</h3>
             <ul class="footer-links list-unstyled">
-              <li><a href="appetizer.html"><i class="bi bi-chevron-right"></i> Appetizer</a></li>
-              <li><a href="maincourse.html"><i class="bi bi-chevron-right"></i> Main Course</a></li>
-              <li><a href="dessertfood.html"><i class="bi bi-chevron-right"></i> Dessert Food</a></li>
-              <li><a href="beverages.html"><i class="bi bi-chevron-right"></i> Beverages </a></li>
+              <li><a href="news.php?kat=5"><i class="bi bi-chevron-right"></i> Appetizer</a></li>
+              <li><a href="news.php?kat=6"><i class="bi bi-chevron-right"></i> Main Course</a></li>
+              <li><a href="news.php?kat=7"><i class="bi bi-chevron-right"></i> Dessert Food</a></li>
+              <li><a href="news.php?kat=8"><i class="bi bi-chevron-right"></i> Beverages </a></li>
              
-
             </ul>
           </div>
 
