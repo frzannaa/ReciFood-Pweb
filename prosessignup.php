@@ -36,7 +36,7 @@ if ($result != null) {
 }  
   else
  {
-    echo "Data gagal disimpan, terjadi kesalahan.";
+  echo header('location: password_didnt_match.php');
     
 }
 
